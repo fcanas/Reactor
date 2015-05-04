@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     let textView = UITextView()
-    let reactView = RCTRootView()
+    let reactView = RCTRootView(bundleURL: NSBundle.mainBundle().URLForResource("main", withExtension: "jsbundle"), moduleName: "Base", launchOptions: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
