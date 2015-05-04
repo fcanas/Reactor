@@ -12,6 +12,8 @@ class ViewController: UIViewController {
 
     let textView = UITextView()
     let reactView = RCTRootView(bundleURL: NSBundle.mainBundle().URLForResource("main", withExtension: "jsbundle"), moduleName: "Base", launchOptions: nil)
+    var bundleURLs :[NSURL!] = [NSBundle.mainBundle().URLForResource("main", withExtension: "jsbundle"), NSBundle.mainBundle().URLForResource("alt", withExtension: "jsbundle")]
+    var currentBundleURL = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,15 +39,21 @@ class ViewController: UIViewController {
         
         let c = [horizontalConstraints, verticalConstraints].flatMap({ e in e })
         view.addConstraints(c)
+    }
+    
+    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
+        currentBundleURL++
+        currentBundleURL %= count(bundleURLs)
         
-        
+        self.reactView.bridge.bundleURL = bundleURLs[currentBundleURL]
+        self.reactView.bridge.reload()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
     
 }
 

@@ -1136,10 +1136,10 @@ var Base = React.createClass({displayName: "Base",
     return (
       React.createElement(View, {style: styles.container}, 
         React.createElement(Text, {style: styles.welcome}, 
-          "Welcome to React Native! - Bundle 1"
+          "Welcome to React Native! Bundle 2"
         ), 
         React.createElement(Text, {style: styles.instructions}, 
-          "This is the bundle that loads be default"
+          "This bundle loads when the screen rotates"
         ), 
         React.createElement(Text, {style: styles.instructions}, 
           "Press Cmd+R to reload,", '\n', 
