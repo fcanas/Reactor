@@ -10,7 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let textView = UITextView()
+    let textView = ACEView()
+    //UITextView()
     let reactView = RCTRootView(bundleURL: NSBundle.mainBundle().URLForResource("main", withExtension: "jsbundle"), moduleName: "Base", launchOptions: nil)
     var bundleURLs :[NSURL!] = [NSBundle.mainBundle().URLForResource("main", withExtension: "jsbundle"), NSBundle.mainBundle().URLForResource("alt", withExtension: "jsbundle")]
     var currentBundleURL = 0
@@ -23,7 +24,7 @@ class ViewController: UIViewController {
         textView.setTranslatesAutoresizingMaskIntoConstraints(false)
         reactView.setTranslatesAutoresizingMaskIntoConstraints(false)
         
-        CodeEditBehavior.addToTextView(textView)
+//        CodeEditBehavior.addToTextView(textView)
         
         view.addSubview(textView)
         view.addSubview(reactView)

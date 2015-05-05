@@ -10,6 +10,8 @@
 		316707F8DC56DF097A9683DE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44A54E3095B81465FA0D306E /* libPods.a */; };
 		E74A60BD1AF817E200ABF75A /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = E74A60BC1AF817E200ABF75A /* main.jsbundle */; };
 		E74A60D51AF825BB00ABF75A /* alt.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = E74A60D41AF825BB00ABF75A /* alt.jsbundle */; };
+		E74A60DD1AF96CF400ABF75A /* ACEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74A60DC1AF96CF400ABF75A /* ACEView.swift */; };
+		E74A60DF1AF96D8700ABF75A /* Editor.html in Resources */ = {isa = PBXBuildFile; fileRef = E74A60DE1AF96D8700ABF75A /* Editor.html */; };
 		E7973F121AF5ADAE00D97D8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7973F111AF5ADAE00D97D8E /* AppDelegate.swift */; };
 		E7973F141AF5ADAE00D97D8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7973F131AF5ADAE00D97D8E /* ViewController.swift */; };
 		E7973F171AF5ADAE00D97D8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7973F151AF5ADAE00D97D8E /* Main.storyboard */; };
@@ -17,6 +19,7 @@
 		E7973F1C1AF5ADAE00D97D8E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7973F1A1AF5ADAE00D97D8E /* LaunchScreen.xib */; };
 		E7973F281AF5ADAE00D97D8E /* ReactorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7973F271AF5ADAE00D97D8E /* ReactorTests.swift */; };
 		E7973F3C1AF6AA7800D97D8E /* CodeEditBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7973F3B1AF6AA7800D97D8E /* CodeEditBehavior.swift */; };
+		E7B6EAB21AF97D180092A9E1 /* ace in Resources */ = {isa = PBXBuildFile; fileRef = E7B6EAB11AF97D180092A9E1 /* ace */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 		44A54E3095B81465FA0D306E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E74A60BC1AF817E200ABF75A /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		E74A60D41AF825BB00ABF75A /* alt.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = alt.jsbundle; sourceTree = "<group>"; };
+		E74A60DC1AF96CF400ABF75A /* ACEView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACEView.swift; sourceTree = "<group>"; };
+		E74A60DE1AF96D8700ABF75A /* Editor.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Editor.html; sourceTree = "<group>"; };
 		E7973F0C1AF5ADAE00D97D8E /* Reactor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reactor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7973F101AF5ADAE00D97D8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7973F111AF5ADAE00D97D8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +51,7 @@
 		E7973F271AF5ADAE00D97D8E /* ReactorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactorTests.swift; sourceTree = "<group>"; };
 		E7973F311AF67AD700D97D8E /* Reactor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Reactor-Bridging-Header.h"; sourceTree = "<group>"; };
 		E7973F3B1AF6AA7800D97D8E /* CodeEditBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeEditBehavior.swift; sourceTree = "<group>"; };
+		E7B6EAB11AF97D180092A9E1 /* ace */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ace; sourceTree = "<group>"; };
 		F07EAAD72F4716E22284A5DF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +114,7 @@
 		E7973F0E1AF5ADAE00D97D8E /* Reactor */ = {
 			isa = PBXGroup;
 			children = (
+				E7B6EAB11AF97D180092A9E1 /* ace */,
 				E74A60D41AF825BB00ABF75A /* alt.jsbundle */,
 				E74A60BC1AF817E200ABF75A /* main.jsbundle */,
 				E7973F111AF5ADAE00D97D8E /* AppDelegate.swift */,
@@ -118,6 +125,8 @@
 				E7973F0F1AF5ADAE00D97D8E /* Supporting Files */,
 				E7973F311AF67AD700D97D8E /* Reactor-Bridging-Header.h */,
 				E7973F3B1AF6AA7800D97D8E /* CodeEditBehavior.swift */,
+				E74A60DC1AF96CF400ABF75A /* ACEView.swift */,
+				E74A60DE1AF96D8700ABF75A /* Editor.html */,
 			);
 			path = Reactor;
 			sourceTree = "<group>";
@@ -232,7 +241,9 @@
 				E7973F171AF5ADAE00D97D8E /* Main.storyboard in Resources */,
 				E74A60BD1AF817E200ABF75A /* main.jsbundle in Resources */,
 				E74A60D51AF825BB00ABF75A /* alt.jsbundle in Resources */,
+				E74A60DF1AF96D8700ABF75A /* Editor.html in Resources */,
 				E7973F1C1AF5ADAE00D97D8E /* LaunchScreen.xib in Resources */,
+				E7B6EAB21AF97D180092A9E1 /* ace in Resources */,
 				E7973F191AF5ADAE00D97D8E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E74A60DD1AF96CF400ABF75A /* ACEView.swift in Sources */,
 				E7973F3C1AF6AA7800D97D8E /* CodeEditBehavior.swift in Sources */,
 				E7973F141AF5ADAE00D97D8E /* ViewController.swift in Sources */,
 				E7973F121AF5ADAE00D97D8E /* AppDelegate.swift in Sources */,
